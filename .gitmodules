@@ -1,0 +1,3 @@
+[submodule "purrfx"]
+	path = PurrFX
+	url = https://github.com/TheCatNose/PurrFX

@@ -13,15 +13,15 @@ int CAudioApp::start()
 	bool bSuccess = (SDL_Init(SDL_INIT_AUDIO) == 0);
 	if (bSuccess)
 	{
-		SDL_AudioSpec desiredSpec;
+		SDL_AudioSpec oAudioSpec;
 
-		desiredSpec.freq     = 44100;
-		desiredSpec.format   = AUDIO_S16LSB;
-		desiredSpec.channels = 2;
-		desiredSpec.samples  = 1024;
-		desiredSpec.callback = audioCallback;
+		oAudioSpec.freq     = 44100;
+		oAudioSpec.format   = AUDIO_S16LSB;
+		oAudioSpec.channels = 2;
+		oAudioSpec.samples  = 1024;
+		oAudioSpec.callback = audioCallback;
 
-		bSuccess = (SDL_OpenAudio(&desiredSpec, nullptr) == 0);
+		bSuccess = (SDL_OpenAudio(&oAudioSpec, nullptr) == 0);
 		if (bSuccess)
 		{
 			SDL_PauseAudio(0);
@@ -37,7 +37,7 @@ int CAudioApp::start()
 	return bSuccess?0:1;
 }
 
-void CAudioApp::audioCallback(void* pUserdata, Uint8* i_pDdata, int i_nSize)
+void CAudioApp::audioCallback(void*, Uint8* i_pDdata, int i_nSize)
 {
 	assert(sm_pInstance != nullptr);
 	sm_pInstance->produceAudioData(

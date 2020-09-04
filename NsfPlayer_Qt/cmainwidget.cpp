@@ -3,24 +3,24 @@
 
 CMainWidget::CMainWidget(QWidget* i_pParent)
 	: QWidget(i_pParent)
-	, ui(new Ui::CMainWidget)
+	, m_pUI(new Ui::CMainWidget)
 {
-	ui->setupUi(this);
+	m_pUI->setupUi(this);
 
 	connect(&m_oAudio, &CAudioStream::audioDataRequired, this, &CMainWidget::onAudioDataRequested);
 
-	connect(ui->btnPrev , &QPushButton::clicked, this, &CMainWidget::onPrev);
-	connect(ui->btnNext , &QPushButton::clicked, this, &CMainWidget::onNext);
+	connect(m_pUI->btnPrev , &QPushButton::clicked, this, &CMainWidget::onPrev);
+	connect(m_pUI->btnNext , &QPushButton::clicked, this, &CMainWidget::onNext);
 
-	connect(ui->btnLoad , &QPushButton::clicked, this, &CMainWidget::onLoad);
-	connect(ui->btnPlay , &QPushButton::clicked, this, &CMainWidget::onPlay);
-	connect(ui->btnPause, &QPushButton::clicked, this, &CMainWidget::onPause);
-	connect(ui->btnStop , &QPushButton::clicked, this, &CMainWidget::onStop);
+	connect(m_pUI->btnLoad , &QPushButton::clicked, this, &CMainWidget::onLoad);
+	connect(m_pUI->btnPlay , &QPushButton::clicked, this, &CMainWidget::onPlay);
+	connect(m_pUI->btnPause, &QPushButton::clicked, this, &CMainWidget::onPause);
+	connect(m_pUI->btnStop , &QPushButton::clicked, this, &CMainWidget::onStop);
 }
 
 CMainWidget::~CMainWidget()
 {
-	delete ui;
+	delete m_pUI;
 }
 
 void CMainWidget::onLoad()
@@ -32,15 +32,15 @@ void CMainWidget::onLoad()
 	if (!m_oNes->open(QPATHSTR(sFileName)))
 		return;
 
-	ui->edtFile->setText( QFileInfo(sFileName).baseName() );
+	m_pUI->edtFile->setText( QFileInfo(sFileName).baseName() );
 
 	m_nTrack = 0;
 	updateTrackText();
 	updatePrevNextButtons();
 
-	ui->btnPlay->setEnabled(true);
-	ui->btnPause->setEnabled(false);
-	ui->btnStop->setEnabled(false);
+	m_pUI->btnPlay->setEnabled(true);
+	m_pUI->btnPause->setEnabled(false);
+	m_pUI->btnStop->setEnabled(false);
 }
 
 void CMainWidget::onPrev()
@@ -65,9 +65,9 @@ void CMainWidget::onPlay()
 {
 	m_oNes->setTrack(m_nTrack);
 	m_oAudio.start();
-	ui->btnPlay->setEnabled(false);
-	ui->btnPause->setEnabled(true);
-	ui->btnStop->setEnabled(true);
+	m_pUI->btnPlay->setEnabled(false);
+	m_pUI->btnPause->setEnabled(true);
+	m_pUI->btnStop->setEnabled(true);
 }
 
 void CMainWidget::onPause()
@@ -78,9 +78,9 @@ void CMainWidget::onPause()
 void CMainWidget::onStop()
 {
 	m_oAudio.stop();
-	ui->btnPlay->setEnabled(true);
-	ui->btnPause->setEnabled(false);
-	ui->btnStop->setEnabled(false);
+	m_pUI->btnPlay->setEnabled(true);
+	m_pUI->btnPause->setEnabled(false);
+	m_pUI->btnStop->setEnabled(false);
 }
 
 void CMainWidget::onAudioDataRequested(char* o_pBuffer, qint64 i_nBufferSize)
@@ -93,11 +93,11 @@ void CMainWidget::updateTrackText()
 	QString sTrack = QString("Track %1/%2")
 		.arg( m_nTrack+1 )
 		.arg( m_oNes->trackCount() );
-	ui->lblTrack->setText(sTrack);
+	m_pUI->lblTrack->setText(sTrack);
 }
 
 void CMainWidget::updatePrevNextButtons()
 {
-	ui->btnPrev->setEnabled( m_nTrack > 0);
-	ui->btnNext->setEnabled( m_nTrack < m_oNes->trackCount()-1 );
+	m_pUI->btnPrev->setEnabled( m_nTrack > 0);
+	m_pUI->btnNext->setEnabled( m_nTrack < m_oNes->trackCount()-1 );
 }

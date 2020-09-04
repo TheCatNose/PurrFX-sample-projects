@@ -33,7 +33,7 @@ private:
 	void updateTrackText();
 	void updatePrevNextButtons();
 
-	Ui::CMainWidget* ui;
+	Ui::CMainWidget* m_pUI;
 	CAudioStream m_oAudio;
 	PurrFX::CNesPtr m_oNes;
 	int m_nTrack = 0;

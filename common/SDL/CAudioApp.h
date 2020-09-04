@@ -23,5 +23,5 @@ private:
 	CAudioApp(const CAudioApp&) = delete;
 
 	void eventLoop();
-	static void audioCallback(void* pUserdata, Uint8* i_pDdata, int i_nSize);
+	static void audioCallback(void*, Uint8* i_pDdata, int i_nSize);
 };

@@ -19,7 +19,7 @@ private:
 void CNsfPlayerApp::init()
 {
 	// Setup player here:
-	m_oNes->open(L"file.nsf");
+	m_oNes->open(PATHSTR("file.nsf"));
 	m_oNes->setTrack(0);
 }
 

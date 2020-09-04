@@ -1,0 +1,8 @@
+# Visual Studio
+*.vcxproj.user
+.vs
+out
+
+# Qt 
+*.pro.user
+build-*

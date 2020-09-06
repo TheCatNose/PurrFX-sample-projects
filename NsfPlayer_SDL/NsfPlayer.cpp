@@ -20,7 +20,7 @@ bool CNsfPlayerApp::init()
 {
 	std::cout << "Enter NSF file name: ";
 	PurrFX::pathstring sFileName;
-	PATH_CIN >> sFileName;
+	std::getline(PATH_CIN, sFileName);
 
 	if (!m_oNes->open(sFileName))
 	{

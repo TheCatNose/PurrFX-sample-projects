@@ -4,7 +4,7 @@
 class CNsfPlayerApp: public CAudioApp
 {
 public:
-	virtual void init();
+	virtual bool init();
 private:
 	virtual void showUsage();
 	virtual void onCommand(const std::string& i_sCommand, bool& o_bQuit);
@@ -16,11 +16,25 @@ private:
 	int m_nTrack = 0;
 };
 
-void CNsfPlayerApp::init()
+bool CNsfPlayerApp::init()
 {
-	// Setup player here:
-	m_oNes->open(PATHSTR("file.nsf"));
-	m_oNes->setTrack(0);
+	std::cout << "Enter NSF file name: ";
+	PurrFX::pathstring sFileName;
+	PATH_CIN >> sFileName;
+
+	if (!m_oNes->open(sFileName))
+	{
+		std::cout << "Can't open NSF file!";
+		return false;
+	}
+
+	if (!m_oNes->setTrack(0))
+	{
+		std::cout << "Can't set track!";
+		return false;
+	}
+
+	return true;
 }
 
 void CNsfPlayerApp::showUsage()

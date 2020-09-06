@@ -26,9 +26,11 @@ int CAudioApp::start()
 		{
 			SDL_PauseAudio(0);
 
-			init();
-			showUsage();
-			eventLoop();
+			if (init())
+			{
+				showUsage();
+				eventLoop();
+			}
 		}
 
 		SDL_Quit();

@@ -4,6 +4,7 @@
 #include <cassert>
 #include <string>
 #include <SDL.h>
+#include "DPath.h"
 
 class CAudioApp
 {
@@ -12,7 +13,7 @@ public:
 	int start();
 
 protected:
-	virtual void init() = 0;
+	virtual bool init() = 0;
 	virtual void showUsage() = 0;
 	virtual void onCommand(const std::string& i_sCommand, bool& o_bQuit) = 0;
 	virtual void produceAudioData(char* i_pData, size_t i_nSize) = 0;

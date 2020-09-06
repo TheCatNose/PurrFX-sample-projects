@@ -20,6 +20,7 @@ protected:
 	
 private:
 	static CAudioApp* sm_pInstance;
+	SDL_mutex* m_pMutex = nullptr;
 	
 	CAudioApp(const CAudioApp&) = delete;
 

@@ -10,7 +10,16 @@ CAudioApp::CAudioApp()
 
 int CAudioApp::start()
 {
-	bool bSuccess = (SDL_Init(SDL_INIT_AUDIO) == 0);
+	bool bInitSuccess = (SDL_Init(SDL_INIT_AUDIO) == 0);
+	bool bSuccess = bInitSuccess;
+
+	if (bSuccess)
+	{
+		m_pMutex = SDL_CreateMutex();
+		bSuccess = m_pMutex != nullptr;
+	}
+
+	bool bAudioInitSuccess = false;
 	if (bSuccess)
 	{
 		SDL_AudioSpec oAudioSpec;
@@ -21,20 +30,31 @@ int CAudioApp::start()
 		oAudioSpec.samples  = 1024;
 		oAudioSpec.callback = audioCallback;
 
-		bSuccess = (SDL_OpenAudio(&oAudioSpec, nullptr) == 0);
-		if (bSuccess)
-		{
-			SDL_PauseAudio(0);
-
-			if (init())
-			{
-				showUsage();
-				eventLoop();
-			}
-		}
-
-		SDL_Quit();
+		bAudioInitSuccess = (SDL_OpenAudio(&oAudioSpec, nullptr) == 0);
+		bSuccess = bAudioInitSuccess;
 	}
+
+	if (bSuccess)
+	{
+		SDL_PauseAudio(0);
+
+		if (init())
+		{
+			showUsage();
+			eventLoop();
+		}
+	}
+
+	// Clean up and end
+
+	if (bAudioInitSuccess)
+		SDL_CloseAudio();
+
+	if (m_pMutex != nullptr)
+		SDL_DestroyMutex(m_pMutex);
+
+	if (bInitSuccess)
+		SDL_Quit();
 
 	return bSuccess?0:1;
 }
@@ -42,10 +62,15 @@ int CAudioApp::start()
 void CAudioApp::audioCallback(void*, Uint8* i_pDdata, int i_nSize)
 {
 	assert(sm_pInstance != nullptr);
+	
+	SDL_LockMutex(sm_pInstance->m_pMutex);
+	
 	sm_pInstance->produceAudioData(
 		reinterpret_cast<char*>(i_pDdata),
 		size_t(i_nSize)
 	);
+
+	SDL_UnlockMutex(sm_pInstance->m_pMutex);
 };
 
 void CAudioApp::eventLoop()
@@ -55,7 +80,11 @@ void CAudioApp::eventLoop()
 		std::string sCommand;
 		std::cin >> sCommand;
 		bool bQuit = false;
+
+		SDL_LockMutex(m_pMutex);
 		onCommand(sCommand, bQuit);
+		SDL_UnlockMutex(m_pMutex);
+
 		if (bQuit)
 			break;
 	}

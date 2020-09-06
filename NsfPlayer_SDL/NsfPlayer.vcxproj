@@ -203,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\common\SDL\CAudioApp.h" />
+    <ClInclude Include="..\common\SDL\DPath.h" />
     <ClInclude Include="..\purrfx\CAudioDataConsumer.h" />
     <ClInclude Include="..\purrfx\CAudioDataConsumerDummy.h" />
     <ClInclude Include="..\purrfx\CAudioDataConsumerWavWriter.h" />

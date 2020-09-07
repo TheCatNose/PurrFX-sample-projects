@@ -17,7 +17,6 @@ public:
 
 private:
 	PurrFX::CFrameDataProducerRandomAccess* m_pSrcProducer = nullptr;
-	PurrFX::CFrameData m_oInitFd;
 	int m_nFrameIndex = 0;
 };
 

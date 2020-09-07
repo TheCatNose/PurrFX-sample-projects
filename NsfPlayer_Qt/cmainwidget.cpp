@@ -32,7 +32,7 @@ void CMainWidget::onLoad()
 	if (!m_oNes->open(QPATHSTR(sFileName)))
 		return;
 
-	m_pUI->edtFile->setText( QFileInfo(sFileName).baseName() );
+	m_pUI->edtFile->setText( QFileInfo(sFileName).fileName() );
 
 	m_nTrack = 0;
 	updateTrackText();

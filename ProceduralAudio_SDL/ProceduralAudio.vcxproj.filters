@@ -203,6 +203,18 @@
     <ClCompile Include="..\ProceduralAudio\CGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\purrfx\CPcm2Dpcm.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CPcm2DpcmNaive.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CPcmSample.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CWavHeader.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\purrfx\CAudioDataConsumer.h">
@@ -435,6 +447,18 @@
     </ClInclude>
     <ClInclude Include="..\ProceduralAudio\CGenerator.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CPcm2Dpcm.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CPcm2DpcmNaive.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CPcmSample.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CWavHeader.h">
+      <Filter>purrfx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

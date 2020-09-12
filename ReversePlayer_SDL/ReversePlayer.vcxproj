@@ -182,6 +182,10 @@
     <ClCompile Include="..\purrfx\CNesGmeAudioDataProvider.cpp" />
     <ClCompile Include="..\purrfx\CNesPtr.cpp" />
     <ClCompile Include="..\purrfx\CNsfTemplate.cpp" />
+    <ClCompile Include="..\purrfx\CPcm2Dpcm.cpp" />
+    <ClCompile Include="..\purrfx\CPcm2DpcmNaive.cpp" />
+    <ClCompile Include="..\purrfx\CPcmSample.cpp" />
+    <ClCompile Include="..\purrfx\CWavHeader.cpp" />
     <ClCompile Include="..\purrfx\gme\Blip_Buffer.cpp" />
     <ClCompile Include="..\purrfx\gme\Classic_Emu.cpp" />
     <ClCompile Include="..\purrfx\gme\Data_Reader.cpp" />
@@ -247,6 +251,10 @@
     <ClInclude Include="..\purrfx\CNesGmeAudioDataProvider.h" />
     <ClInclude Include="..\purrfx\CNesPtr.h" />
     <ClInclude Include="..\purrfx\CNsfTemplate.h" />
+    <ClInclude Include="..\purrfx\CPcm2Dpcm.h" />
+    <ClInclude Include="..\purrfx\CPcm2DpcmNaive.h" />
+    <ClInclude Include="..\purrfx\CPcmSample.h" />
+    <ClInclude Include="..\purrfx\CWavHeader.h" />
     <ClInclude Include="..\purrfx\DClass.h" />
     <ClInclude Include="..\purrfx\DNesConsts.h" />
     <ClInclude Include="..\purrfx\DPath.h" />

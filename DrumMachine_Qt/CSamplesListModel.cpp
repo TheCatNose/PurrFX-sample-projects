@@ -8,8 +8,6 @@ CSamplesListModel::CSamplesListModel(const PurrFX::CDpcmDataFileReader& i_rDpcmP
 
 void CSamplesListModel::onAppended()
 {
-	if (m_nSize == m_rDpcmProvider.size()) // Loading failed
-		return;
 	Q_ASSERT(m_nSize == m_rDpcmProvider.size()-1);
 	beginInsertRows(QModelIndex(), m_nSize+1, m_nSize+1);
 	m_nSize++;

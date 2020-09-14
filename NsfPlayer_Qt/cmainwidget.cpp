@@ -7,11 +7,11 @@ CMainWidget::CMainWidget(QWidget* i_pParent)
 {
 	m_pUI->setupUi(this);
 
-	m_oNes->logItemTypeDisable(PurrFX::ELogItemType::CodeLabel);
-	m_oNes->logItemTypeDisable(PurrFX::ELogItemType::CpuInstruction);
-	m_oNes->logItemTypeDisable(PurrFX::ELogItemType::FrameEnd);
-	m_oNes->logItemTypeDisable(PurrFX::ELogItemType::FrameStart);
-	m_oNes->setLogDataConsumer(&m_oLogger);
+	m_oNes->nesEventTypeDisable(PurrFX::ENesEventType::CodeLabel);
+	m_oNes->nesEventTypeDisable(PurrFX::ENesEventType::CpuInstruction);
+	m_oNes->nesEventTypeDisable(PurrFX::ENesEventType::FrameEnd);
+	m_oNes->nesEventTypeDisable(PurrFX::ENesEventType::FrameStart);
+	m_oNes->setNesEventConsumer(&m_oLogger);
 	connect(&m_oLogger, &CLogger::registerChanged, this, &CMainWidget::onRegisterValueChanged);
 
 	connect(&m_oAudio, &CAudioStream::audioDataRequired, this, &CMainWidget::onAudioDataRequested);

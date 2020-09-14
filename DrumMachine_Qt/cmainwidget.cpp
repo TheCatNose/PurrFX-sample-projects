@@ -40,8 +40,8 @@ void CMainWidget::onLoad()
 	if (sFileName.size() == 0)
 		return;
 
-	m_oDpcmProvider.load(QPATHSTR(sFileName));
-	m_oModel.onAppended();
+	if (m_oDpcmProvider.load(QPATHSTR(sFileName)))
+		m_oModel.onAppended();
 }
 
 void CMainWidget::onPlay()

@@ -38,9 +38,6 @@
     <ClCompile Include="..\purrfx\CAudioProxyBuffer.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CAudioProxyBufferDataProvider.cpp">
-      <Filter>purrfx</Filter>
-    </ClCompile>
     <ClCompile Include="..\purrfx\CBufferedFileWriter.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
@@ -86,28 +83,28 @@
     <ClCompile Include="..\purrfx\CFrameDataProducer.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogDataConsumer.cpp">
+    <ClCompile Include="..\purrfx\CNesEventConsumer.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogFileWriter.cpp">
+    <ClCompile Include="..\purrfx\CNesEventConsumerFileWriter.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogItem.cpp">
+    <ClCompile Include="..\purrfx\CNesEvent.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogItemApuRegisterWrite.cpp">
+    <ClCompile Include="..\purrfx\CNesEventApuRegisterWrite.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogItemCodeLabel.cpp">
+    <ClCompile Include="..\purrfx\CNesEventCodeLabel.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogItemCpuInstruction.cpp">
+    <ClCompile Include="..\purrfx\CNesEventCpuInstruction.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogItemFrameEnd.cpp">
+    <ClCompile Include="..\purrfx\CNesEventFrameEnd.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
-    <ClCompile Include="..\purrfx\CLogItemFrameStart.cpp">
+    <ClCompile Include="..\purrfx\CNesEventFrameStart.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
     <ClCompile Include="..\purrfx\CNes.cpp">
@@ -283,28 +280,28 @@
     <ClInclude Include="..\purrfx\CFrameDataProducerRandomAccess.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogDataConsumer.h">
+    <ClInclude Include="..\purrfx\CNesEventConsumer.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogFileWriter.h">
+    <ClInclude Include="..\purrfx\CNesEventConsumerFileWriter.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogItem.h">
+    <ClInclude Include="..\purrfx\CNesEvent.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogItemApuRegisterWrite.h">
+    <ClInclude Include="..\purrfx\CNesEventApuRegisterWrite.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogItemCodeLabel.h">
+    <ClInclude Include="..\purrfx\CNesEventCodeLabel.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogItemCpuInstruction.h">
+    <ClInclude Include="..\purrfx\CNesEventCpuInstruction.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogItemFrameEnd.h">
+    <ClInclude Include="..\purrfx\CNesEventFrameEnd.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\CLogItemFrameStart.h">
+    <ClInclude Include="..\purrfx\CNesEventFrameStart.h">
       <Filter>purrfx</Filter>
     </ClInclude>
     <ClInclude Include="..\purrfx\CNes.h">
@@ -340,7 +337,7 @@
     <ClInclude Include="..\purrfx\EDpcmFileType.h">
       <Filter>purrfx</Filter>
     </ClInclude>
-    <ClInclude Include="..\purrfx\ELogItemType.h">
+    <ClInclude Include="..\purrfx\ENesEventType.h">
       <Filter>purrfx</Filter>
     </ClInclude>
     <ClInclude Include="..\purrfx\ENesType.h">

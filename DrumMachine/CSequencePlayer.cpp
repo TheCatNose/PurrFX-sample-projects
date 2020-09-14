@@ -24,14 +24,11 @@ void CSequencePlayer::restart()
 
 bool CSequencePlayer::available() const
 {
-	return true;
+	return (m_nFrame % m_nFramesPerStep == 0);
 }
 
 PurrFX::CFrameData CSequencePlayer::get() const
 {
-	if (m_nFrame % m_nFramesPerStep != 0)
-		return PurrFX::CFrameData();
-
 	const size_t nStep = currentStep();
 	char cSampleIndex = m_sSequence[nStep];
 	if (cSampleIndex < '1' &&

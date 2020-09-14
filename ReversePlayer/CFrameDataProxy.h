@@ -2,8 +2,8 @@
 #define CFRAMEDATAPROXY_H
 
 #include <cassert>
-#include <CFrameDataProducer.h>
-#include <CFrameDataProducerRandomAccess.h>
+#include <purrfx/CFrameDataProducer.h>
+#include <purrfx/CFrameDataProducerRandomAccess.h>
 
 class CFrameDataProxy: public PurrFX::CFrameDataProducer
 {

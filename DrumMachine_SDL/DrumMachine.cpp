@@ -1,6 +1,6 @@
 #include <CAudioApp.h>
-#include <PurrFX.h>
-#include "../DrumMachine/CSequencePlayer.h"
+#include <purrfx/PurrFX.h>
+#include "DrumMachine/CSequencePlayer.h"
 
 class CReversePlayerApp: public CAudioApp
 {

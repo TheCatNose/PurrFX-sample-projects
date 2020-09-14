@@ -8,10 +8,10 @@
 #include "DString.h"
 #include "CAudioStream.h"
 #include "CSamplesListModel.h"
-#include "../DrumMachine/CSequencePlayer.h"
+#include "DrumMachine/CSequencePlayer.h"
 
-#include "PurrFX.h"
-#include "CDpcmDataFileReader.h"
+#include "purrfx/PurrFX.h"
+#include "purrfx/CDpcmDataFileReader.h"
 
 namespace Ui { class CMainWidget; }
 

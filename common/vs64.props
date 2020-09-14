@@ -12,8 +12,8 @@
     <IntDir>$(SolutionDir)..\out\$(ProjectName)\$(Platform)\$(Configuration)\intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup>
-    <SourcePath>$(ProjectDir)..\purrfx\;$(SourcePath)</SourcePath>
-    <IncludePath>$(ProjectDir)..\purrfx\;$(ProjectDir)..\common\SDL\;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\;$(SourcePath)</SourcePath>
+    <IncludePath>$(ProjectDir)..\;$(ProjectDir)..\common\SDL\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>

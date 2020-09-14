@@ -1,6 +1,6 @@
 #include <CAudioApp.h>
-#include <PurrFX.h>
-#include "../ProceduralAudio/CGenerator.h"
+#include <purrfx/PurrFX.h>
+#include "ProceduralAudio/CGenerator.h"
 
 class CReversePlayerApp: public CAudioApp
 {

@@ -2,7 +2,7 @@
 #define CAUDIOGENERATOR_H
 
 #include <random>
-#include <CFrameDataProducer.h>
+#include <purrfx/CFrameDataProducer.h>
 
 class CGenerator: public PurrFX::CFrameDataProducer
 {

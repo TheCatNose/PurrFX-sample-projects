@@ -1,6 +1,6 @@
 #include <CAudioApp.h>
-#include <PurrFX.h>
-#include "../ReversePlayer/CFrameDataProxy.h"
+#include <purrfx/PurrFX.h>
+#include "ReversePlayer/CFrameDataProxy.h"
 
 class CReversePlayerApp: public CAudioApp
 {

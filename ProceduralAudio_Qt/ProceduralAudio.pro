@@ -19,7 +19,7 @@ SOURCES += $$files(../common/Qt/*.cpp, false)
 HEADERS += $$files(../common/Qt/*.h, false)
 
 # PurrFX
-INCLUDEPATH += ../PurrFX/
+INCLUDEPATH += ../
 SOURCES += $$files(../PurrFX/*.cpp, true)
 HEADERS += $$files(../PurrFX/*.h, true)
 SOURCES -= $$files(../PurrFX/prj/*.cpp, true)

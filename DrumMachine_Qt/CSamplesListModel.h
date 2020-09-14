@@ -2,7 +2,7 @@
 #define CSAMPLESLISTMODEL_H
 
 #include <QAbstractItemModel>
-#include "CDpcmDataFileReader.h"
+#include "purrfx/CDpcmDataFileReader.h"
 
 class CSamplesListModel: public QAbstractItemModel
 {

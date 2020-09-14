@@ -1,5 +1,5 @@
 #include <CAudioApp.h>
-#include <PurrFX.h>
+#include <purrfx/PurrFX.h>
 
 class CNsfPlayerApp: public CAudioApp
 {

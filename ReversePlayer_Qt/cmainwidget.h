@@ -5,8 +5,8 @@
 #include <QFileDialog>
 #include "DString.h"
 #include "CAudioStream.h"
-#include "PurrFX.h"
-#include "../ReversePlayer/CFrameDataProxy.h"
+#include "purrfx/PurrFX.h"
+#include "ReversePlayer/CFrameDataProxy.h"
 
 namespace Ui { class CMainWidget; }
 

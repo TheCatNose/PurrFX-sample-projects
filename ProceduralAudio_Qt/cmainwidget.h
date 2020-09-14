@@ -6,8 +6,8 @@
 #include <QSpinBox>
 #include "DString.h"
 #include "CAudioStream.h"
-#include "../ProceduralAudio/CGenerator.h"
-#include "PurrFX.h"
+#include "ProceduralAudio/CGenerator.h"
+#include "purrfx/PurrFX.h"
 
 namespace Ui { class CMainWidget; }
 

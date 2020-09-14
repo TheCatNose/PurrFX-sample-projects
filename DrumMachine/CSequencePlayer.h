@@ -2,8 +2,8 @@
 #define CSEQUENCEPLAYER_H
 
 #include <string>
-#include "PurrFX.h"
-#include "CDpcmDataFileReader.h"
+#include "purrfx/PurrFX.h"
+#include "purrfx/CDpcmDataFileReader.h"
 
 class CSequencePlayer: public PurrFX::CFrameDataProducer
 {

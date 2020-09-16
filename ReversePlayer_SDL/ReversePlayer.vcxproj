@@ -184,6 +184,8 @@
     <ClCompile Include="..\purrfx\CPcm2Dpcm.cpp" />
     <ClCompile Include="..\purrfx\CPcm2DpcmNaive.cpp" />
     <ClCompile Include="..\purrfx\CPcmSample.cpp" />
+    <ClCompile Include="..\purrfx\CRegister.cpp" />
+    <ClCompile Include="..\purrfx\CRegisterStructure.cpp" />
     <ClCompile Include="..\purrfx\CWavHeader.cpp" />
     <ClCompile Include="..\purrfx\gme\Blip_Buffer.cpp" />
     <ClCompile Include="..\purrfx\gme\Classic_Emu.cpp" />
@@ -253,6 +255,8 @@
     <ClInclude Include="..\purrfx\CPcm2Dpcm.h" />
     <ClInclude Include="..\purrfx\CPcm2DpcmNaive.h" />
     <ClInclude Include="..\purrfx\CPcmSample.h" />
+    <ClInclude Include="..\purrfx\CRegister.h" />
+    <ClInclude Include="..\purrfx\CRegisterStructure.h" />
     <ClInclude Include="..\purrfx\CWavHeader.h" />
     <ClInclude Include="..\purrfx\DClass.h" />
     <ClInclude Include="..\purrfx\DNesConsts.h" />

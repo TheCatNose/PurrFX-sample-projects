@@ -212,6 +212,12 @@
     <ClCompile Include="..\purrfx\CWavHeader.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
+    <ClCompile Include="..\purrfx\CRegister.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CRegisterStructure.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\purrfx\CAudioDataConsumer.h">
@@ -455,6 +461,12 @@
       <Filter>purrfx</Filter>
     </ClInclude>
     <ClInclude Include="..\purrfx\CWavHeader.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CRegister.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CRegisterStructure.h">
       <Filter>purrfx</Filter>
     </ClInclude>
   </ItemGroup>

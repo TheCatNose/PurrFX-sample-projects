@@ -212,6 +212,12 @@
     <ClCompile Include="DrumMachine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\purrfx\CRegister.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CRegisterStructure.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\purrfx\CAudioDataConsumer.h">
@@ -456,6 +462,12 @@
     </ClInclude>
     <ClInclude Include="..\DrumMachine\CSequencePlayer.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CRegister.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CRegisterStructure.h">
+      <Filter>purrfx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

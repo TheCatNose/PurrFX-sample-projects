@@ -212,6 +212,15 @@
     <ClCompile Include="..\purrfx\CRegisterStructure.cpp">
       <Filter>purrfx</Filter>
     </ClCompile>
+    <ClCompile Include="..\purrfx\CByteOrder.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CNesState.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\purrfx\CNote.cpp">
+      <Filter>purrfx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\purrfx\CAudioDataConsumer.h">
@@ -458,6 +467,18 @@
       <Filter>purrfx</Filter>
     </ClInclude>
     <ClInclude Include="..\purrfx\CRegisterStructure.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CByteOrder.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CNesState.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\CNote.h">
+      <Filter>purrfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\purrfx\EByteOrder.h">
       <Filter>purrfx</Filter>
     </ClInclude>
   </ItemGroup>

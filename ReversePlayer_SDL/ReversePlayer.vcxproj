@@ -150,6 +150,7 @@
     <ClCompile Include="..\purrfx\CAudioFormat.cpp" />
     <ClCompile Include="..\purrfx\CAudioProxyBuffer.cpp" />
     <ClCompile Include="..\purrfx\CBufferedFileWriter.cpp" />
+    <ClCompile Include="..\purrfx\CByteOrder.cpp" />
     <ClCompile Include="..\purrfx\CCpuInstructionInfo.cpp" />
     <ClCompile Include="..\purrfx\CDpcmDataBuffer.cpp" />
     <ClCompile Include="..\purrfx\CDpcmDataConsumer.cpp" />
@@ -180,6 +181,8 @@
     <ClCompile Include="..\purrfx\CNesGme.cpp" />
     <ClCompile Include="..\purrfx\CNesGmeAudioDataProvider.cpp" />
     <ClCompile Include="..\purrfx\CNesPtr.cpp" />
+    <ClCompile Include="..\purrfx\CNesState.cpp" />
+    <ClCompile Include="..\purrfx\CNote.cpp" />
     <ClCompile Include="..\purrfx\CNsfTemplate.cpp" />
     <ClCompile Include="..\purrfx\CPcm2Dpcm.cpp" />
     <ClCompile Include="..\purrfx\CPcm2DpcmNaive.cpp" />
@@ -220,6 +223,7 @@
     <ClInclude Include="..\purrfx\CAudioProxyBuffer.h" />
     <ClInclude Include="..\purrfx\CAudioProxyBufferDataProvider.h" />
     <ClInclude Include="..\purrfx\CBufferedFileWriter.h" />
+    <ClInclude Include="..\purrfx\CByteOrder.h" />
     <ClInclude Include="..\purrfx\CCpuInstructionInfo.h" />
     <ClInclude Include="..\purrfx\CDpcmDataBuffer.h" />
     <ClInclude Include="..\purrfx\CDpcmDataConsumer.h" />
@@ -251,6 +255,8 @@
     <ClInclude Include="..\purrfx\CNesGme.h" />
     <ClInclude Include="..\purrfx\CNesGmeAudioDataProvider.h" />
     <ClInclude Include="..\purrfx\CNesPtr.h" />
+    <ClInclude Include="..\purrfx\CNesState.h" />
+    <ClInclude Include="..\purrfx\CNote.h" />
     <ClInclude Include="..\purrfx\CNsfTemplate.h" />
     <ClInclude Include="..\purrfx\CPcm2Dpcm.h" />
     <ClInclude Include="..\purrfx\CPcm2DpcmNaive.h" />
@@ -261,6 +267,7 @@
     <ClInclude Include="..\purrfx\DClass.h" />
     <ClInclude Include="..\purrfx\DNesConsts.h" />
     <ClInclude Include="..\purrfx\DPath.h" />
+    <ClInclude Include="..\purrfx\EByteOrder.h" />
     <ClInclude Include="..\purrfx\ECodeLabelType.h" />
     <ClInclude Include="..\purrfx\EDpcmFileType.h" />
     <ClInclude Include="..\purrfx\ENesEventType.h" />

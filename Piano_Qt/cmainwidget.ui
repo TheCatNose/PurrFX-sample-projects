@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMainWidget</class>
+ <widget class="QWidget" name="CMainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>237</width>
+    <height>122</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PurrFX piano</string>
+  </property>
+  <layout class="QVBoxLayout" name="layMain">
+   <item>
+    <widget class="QLabel" name="lblInfo">
+     <property name="text">
+      <string>Lower octave keys:
+ZSXDCVGBHNJM
+
+Higher octave keys:
+Q2W3ER5T6Y7U
+
+
+To change duty press page up or page down.</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
